@@ -38,7 +38,7 @@ if [ -f $(which yq || echo _none_ ) ]; then
     echo "os.pack.tool.yq4.is.present"
 else
     echo "Install yq from github release"
-    wget https://github.com/mikefarah/yq/releases/download/v4.16.1/yq_linux_amd64 \
+    wget https://github.com/mikefarah/yq/releases/download/v4.23.1/yq_linux_amd64 \
         && chmod +x yq_linux_amd64 \
         && sudo mv yq_linux_amd64 /usr/local/bin/yq \
         && echo "yq4 installed into: /usr/local/bin/yq"
